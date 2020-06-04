@@ -29,18 +29,34 @@
 
         <EditText
             android:id="@+id/searchBox"
-            android:layout_width="320dp"
+            android:layout_width="172dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Адрес"
             android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/searchButton"
+            android:id="@+id/directButton"
             android:layout_width="wrap_content"
             android:layout_height="37dp"
-            android:onClick="OnSearchButtonClick"
-            android:text="Искать!" />
+            android:onClick="onDirectButtonClick"
+            android:text="Прямое" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="134dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:onClick="onBackButtonClick"
+            android:text="Обратное" />
+
+        <Button
+            android:id="@+id/backButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:onClick="onIpButtonClick"
+            android:text="IP" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
